@@ -1,6 +1,6 @@
 # Castiel
 
-(Castiel)[0] was written to rescue me from hell every time I have to write any kind
+[Castiel](http://va.mu/cUmX) was written to rescue me from hell every time I have to write any kind
 of script that must deal with dates and times to be parsed on command line.
 
 It is common to me to write summarization daemons that must accept command lines like:
@@ -36,5 +36,3 @@ TODO: Write usage instructions here
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
-
-[0]: Castiel http://en.wikipedia.org/wiki/Castiel_(Supernatural)
