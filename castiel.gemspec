@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
   spec.version       = Castiel::VERSION
   spec.authors       = ["Adilson Carvalho"]
   spec.email         = ["adilson@adilsoncarvalho.com.br"]
-  spec.description   = 'Extension do add date and time capabilities to OptionsParse'
-  spec.summary       = 'Extension do add date and time capabilities to OptionsParse'
-  spec.homepage      = ''
+  spec.description   = 'Extension do add date and time parsing capabilities to OptionsParse'
+  spec.summary       = 'Extension do add date and time parsing capabilities to OptionsParse'
+  spec.homepage      = 'https://github.com/adilsoncarvalho/castiel'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
