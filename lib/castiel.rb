@@ -16,4 +16,13 @@ module Castiel
     autoload :DateTimeParser, 'castiel/parsers/date_time_parser'
   end
 
+  def self.default_parser_class
+    @default_parser ||= Castiel::Parsers::DateTimeParser
+  end
+
+  def self.default_parser_class=(klass)
+    raise 'Parser class must have a "parse" method declared' unless klass.instance_methods.include? :parse
+    @default_parser = klass
+  end
+
 end
