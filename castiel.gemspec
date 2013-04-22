@@ -24,4 +24,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 0.9.2'
   spec.add_development_dependency 'rspec', '~> 2.5'
   spec.add_development_dependency 'fuubar', '~> 1.1.0'
+  spec.add_development_dependency 'guard'
+  spec.add_development_dependency 'guard-rspec'
+  spec.add_development_dependency 'growl'
 end
