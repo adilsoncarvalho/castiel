@@ -25,4 +25,8 @@ module Castiel
     @default_parser = klass
   end
 
+  def self.parse(elements)
+    default_parser_class.new.parse elements
+  end
+
 end

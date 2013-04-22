@@ -22,4 +22,23 @@ describe 'Castiel' do
 
   end
 
+  describe '.parse' do
+    it 'Should call the default parser and pass the given elements' do
+      parser_double = double(:parser)
+      parser_double.should_receive(:new)
+        .once
+        .and_return(parser_double)
+      parser_double.should_receive(:parse)
+        .with(:elements)
+        .once
+        .and_return(:parsed_elements)
+
+      subject.should_receive(:default_parser_class)
+        .once
+        .and_return(parser_double)
+
+      subject.parse(:elements).should == :parsed_elements
+    end
+  end
+
 end
