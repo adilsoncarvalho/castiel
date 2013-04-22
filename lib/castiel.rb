@@ -10,4 +10,10 @@ module Castiel
     autoload :SymbolElement,  'castiel/elements/symbol_element'
   end
 
+  module Parsers
+    # parsers
+    autoload :BaseParser,     'castiel/parsers/base_parser'
+    autoload :DateTimeParser, 'castiel/parsers/date_time_parser'
+  end
+
 end
