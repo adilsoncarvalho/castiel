@@ -27,7 +27,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+````ruby
+Castiel.parse 'yesterday today 1977-04-13'
+# => [2013-04-21 00:00:00 -0300, 2013-04-22 00:00:00 -0300, 1977-04-13 00:00:00 -0300]
+````
 
 ## Contributing
 
