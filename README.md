@@ -1,4 +1,4 @@
-# Castiel
+# Castiel [![Build Status](https://travis-ci.org/adilsoncarvalho/castiel.png?branch=master)](https://travis-ci.org/adilsoncarvalho/castiel)
 
 [Castiel](http://va.mu/cUmX) was written to rescue me from hell every time I have to write any kind
 of script that must deal with dates and times to be parsed on command line.
