@@ -22,9 +22,17 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency 'bundler', '~> 1.3'
   spec.add_development_dependency 'rake', '~> 0.9.2'
+
+  # test stuff
   spec.add_development_dependency 'rspec', '~> 2.5'
   spec.add_development_dependency 'fuubar', '~> 1.1.0'
+
+  # run tests automatically
   spec.add_development_dependency 'guard'
   spec.add_development_dependency 'guard-rspec'
   spec.add_development_dependency 'growl'
+
+  # for documentation
+  spec.add_development_dependency 'yard'
+  spec.add_development_dependency 'redcarpet'
 end
