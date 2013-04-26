@@ -1,4 +1,5 @@
 require "castiel/version"
+require "castiel/ast/pattern/collection"
 
 module Castiel
 
