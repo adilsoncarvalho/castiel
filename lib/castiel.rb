@@ -1,5 +1,6 @@
 require "castiel/version"
 require "castiel/ast/pattern/collection"
+require "castiel/ast/pattern/matcher"
 
 module Castiel
 
