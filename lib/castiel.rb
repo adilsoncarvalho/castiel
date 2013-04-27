@@ -5,9 +5,9 @@ require "castiel/ast/pattern/matcher"
 module Castiel
 
   module AST
+    autoload :Parser, 'castiel/ast/parser'
 
     module Elements
-
       module Base
         autoload :BaseElementParser, 'castiel/ast/elements/base/base_element_parser'
         autoload :BaseDay,           'castiel/ast/elements/base/base_day'
