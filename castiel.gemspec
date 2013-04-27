@@ -35,4 +35,7 @@ Gem::Specification.new do |spec|
   # for documentation
   spec.add_development_dependency 'yard'
   spec.add_development_dependency 'redcarpet'
+
+  # for code coverage
+  spec.add_development_dependency 'simplecov'
 end
