@@ -2,7 +2,7 @@ module Castiel
   module AST
     module Elements
 
-      class SimpleDay < Castiel::AST::BaseDay
+      class SimpleDay < Base::BaseDay
         add_pattern ->(element) { return [Date.parse(element).to_time] rescue nil }
 
         def value

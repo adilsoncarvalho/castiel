@@ -2,7 +2,7 @@ module Castiel
   module AST
     module Elements
 
-      class SimpleRangeHour < Castiel::AST::BaseHour
+      class RangeHour < Base::BaseHour
         add_pattern /^()\.\.([01]?\d|2[0123])$/
         add_pattern /^([01]?\d|2[0123])\.\.([01]?\d|2[0123])$/
         add_pattern /^([01]?\d|2[0123])\.\.()$/

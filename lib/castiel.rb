@@ -5,14 +5,18 @@ require "castiel/ast/pattern/matcher"
 module Castiel
 
   module AST
-    autoload :BaseElementParser, 'castiel/ast/base_element_parser'
-    autoload :BaseDay,           'castiel/ast/base_day'
-    autoload :BaseHour,          'castiel/ast/base_hour'
 
     module Elements
+
+      module Base
+        autoload :BaseElementParser, 'castiel/ast/elements/base/base_element_parser'
+        autoload :BaseDay,           'castiel/ast/elements/base/base_day'
+        autoload :BaseHour,          'castiel/ast/elements/base/base_hour'
+      end
+
       autoload :SimpleHour,      'castiel/ast/elements/simple_hour'
-      autoload :SimpleAmPmHour,  'castiel/ast/elements/simple_am_pm_hour'
-      autoload :SimpleRangeHour, 'castiel/ast/elements/simple_range_hour'
+      autoload :AmPmHour,        'castiel/ast/elements/am_pm_hour'
+      autoload :RangeHour,       'castiel/ast/elements/range_hour'
 
       autoload :SimpleDay,       'castiel/ast/elements/simple_day'
       autoload :TextualDay,      'castiel/ast/elements/textual_day'

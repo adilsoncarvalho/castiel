@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe Castiel::AST::Elements::SimpleAmPmHour do
+describe Castiel::AST::Elements::AmPmHour do
   def try(opts)
     begin
-      subject = Castiel::AST::Elements::SimpleAmPmHour.new opts[:element]
+      subject = Castiel::AST::Elements::AmPmHour.new opts[:element]
       subject.match?.should == opts[:match?]
       subject.value.should == opts[:value]
     rescue Exception => e

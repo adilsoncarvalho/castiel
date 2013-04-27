@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Castiel::AST::BaseElementParser do
+describe Castiel::AST::Elements::Base::BaseElementParser do
   let(:element) { :doesnt_matter }
-  let(:subject) { Castiel::AST::BaseElementParser.new element }
+  let(:subject) { Castiel::AST::Elements::Base::BaseElementParser.new element }
 
   context 'Element based tests' do
     let(:element) do

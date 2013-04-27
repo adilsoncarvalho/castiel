@@ -2,7 +2,7 @@ module Castiel
   module AST
     module Elements
 
-      class SimpleHour < Castiel::AST::BaseHour
+      class SimpleHour < Base::BaseHour
         add_pattern /^([01]?\d|2[0123])$/
 
         def value

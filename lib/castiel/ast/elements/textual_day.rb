@@ -2,7 +2,7 @@ module Castiel
   module AST
     module Elements
 
-      class TextualDay < Castiel::AST::BaseDay
+      class TextualDay < Base::BaseDay
         add_pattern /yesterday|today|tomorrow/i
 
         def value
