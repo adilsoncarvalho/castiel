@@ -8,6 +8,12 @@ module Castiel
     autoload :BaseElementParser, 'castiel/ast/base_element_parser'
     autoload :BaseDay,           'castiel/ast/base_day'
     autoload :BaseHour,          'castiel/ast/base_hour'
+
+    module Elements
+      autoload :SimpleHour,      'castiel/ast/elements/simple_hour'
+      autoload :SimpleAmPmHour,  'castiel/ast/elements/simple_am_pm_hour'
+      autoload :SimpleRangeHour, 'castiel/ast/elements/simple_range_hour'
+    end
   end
 
   module Elements
