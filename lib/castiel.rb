@@ -4,6 +4,10 @@ require "castiel/ast/pattern/matcher"
 
 module Castiel
 
+  module AST
+    autoload :BaseElementParser, 'castiel/ast/base_element_parser'
+  end
+
   module Elements
     # elements stuff
     autoload :BaseElement,    'castiel/elements/base_element'
