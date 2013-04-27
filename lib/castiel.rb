@@ -13,6 +13,9 @@ module Castiel
       autoload :SimpleHour,      'castiel/ast/elements/simple_hour'
       autoload :SimpleAmPmHour,  'castiel/ast/elements/simple_am_pm_hour'
       autoload :SimpleRangeHour, 'castiel/ast/elements/simple_range_hour'
+
+      autoload :SimpleDay,       'castiel/ast/elements/simple_day'
+      autoload :TextualDay,      'castiel/ast/elements/textual_day'
     end
   end
 
