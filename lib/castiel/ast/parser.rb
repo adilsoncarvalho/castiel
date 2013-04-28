@@ -28,6 +28,34 @@ module Castiel
         end
         nil
       end
+
+      # Converts a raw list of elements into a composed tree
+      # of days and times
+      #
+      # @param [Array] elements list of elements to compose tree
+      # @return [Array] tree of composed elements
+      def compose_tree(elements)
+        tree = []
+        leaf = []
+
+        elements.each do |element|
+          case element.type
+          when :day
+            tree << leaf unless leaf.empty?
+            leaf = [element]
+
+          when :hour
+            # leaf << [:date, 'today'] if leaf.empty?
+            leaf << element
+
+          else
+            raise "Unexpected element #{element}"
+          end
+        end
+
+        tree << leaf unless leaf.empty?
+        tree
+      end
     end
 
   end

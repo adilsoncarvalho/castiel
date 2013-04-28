@@ -78,7 +78,42 @@ describe Castiel::AST::Parser do
 
       lambda{ subject.parse('bazzinga') }.should raise_error
     end
+  end
 
+  describe '#compose_tree' do
+    class Base
+      def type
+        to_s.to_sym
+      end
+
+      def to_s
+        self.class.to_s.downcase
+      end
+
+    end
+
+    class Day  < Base;  end
+    class Hour < Base; end
+    class Unexpected < Base; end
+
+    def try(elements)
+      expectation = elements
+
+      # converting text into elements
+      elements = elements.gsub(/\[|\]|,|\:/,'')
+      elements = elements.split(' ')
+      elements = elements.collect {|element| element == 'day' ? Day.new : Hour.new }
+
+      subject.compose_tree(elements).inspect.should == expectation
+    end
+
+    it { try '[]' }
+    it { try '[[hour]]' }
+    it { try '[[hour], [day]]' }
+    it { try '[[day, hour]]' }
+    it { try '[[hour], [day, hour], [day, hour, hour], [day]]' }
+
+    it { lambda{ subject.compose_tree([Unexpected.new]) }.should raise_error }
   end
 
 end
